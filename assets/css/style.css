@@ -7,8 +7,8 @@
 }
 
 :root {
-    --primary-color: #e5faaf;
-    --secondary-color: #db5f00;
+    --primary-color: #e47d2e;
+    --secondary-color: #000000;
     --tertiary-color: #78d2f0;
 }
 
@@ -25,15 +25,60 @@ body {
 
 /* Basic Styling End */ 
 
-/* Header Styling Start */ 
+/* Header & Footer Styling Start */ 
 
 header {
     padding: 25px 20px;
-    background-image: url(../images/bg-1.jpg);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-image: url(../images/bg-3.jpg);
     background-size: cover;
     background-attachment: fixed;
-    background-position: 30%;
+    background-position: 80%;
     z-index: 600;
+}
+
+header h1, footer h1 {
+    font-weight: bolder;
+    font-size: 35px;
+    margin: 0;
+    text-shadow: -5px -5px 20px rgba(229,250,175, 1);
+}
+
+header a, footer a {
+    text-decoration: none;
+    color: var(--secondary-color)
+}
+
+header nav, footer nav {
+    margin: 10px 0;
+}
+
+header nav ul, footer nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-end;
+    list-style: none;
+}
+
+header nav ul li a, footer nav ul li a {
+    padding: 15px 20px;
+    font-weight: 400;
+    font-size: 1.55vw;
+    color: white;
+    text-shadow: -5px -5px 20px rgba(229,250,175, 1);
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background: var(--tertiary-color)
 }
 
 
@@ -41,13 +86,13 @@ header {
 /*Banner Styling*/
 
 .banner {
-    background-image: url("../images/bg-1.jpg");
+    background-image: url("../images/bg-3.jpg");
     background-size: cover;
     display: flex;
     justify-content: end;
     flex-wrap: wrap;
     align-items: flex-end;
     background-attachment: fixed;
-    background-position: 30%;
+    background-position: 80%;
     height: 200px;
 }
