@@ -81,6 +81,9 @@ footer {
     background: var(--tertiary-color)
 }
 
+section {
+    padding: 80px;
+}
 
 
 /*Banner Styling*/
