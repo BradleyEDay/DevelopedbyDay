@@ -1,36 +1,126 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="with-device-width, initial-scale=10" />
         <title>Developed By Day</title>
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karla">
     </head>
 
     <body>
-        <h1>Coding With BD</h1>
 
-        <h2>Bradley Day</h2>
-        <section>
-            <!-- Picture -->
-            <img src="file:///M:/beday/Images/Headshots/2020/Bradley%20Day%20IMG_1102-1_7x7%2072dpi%20(95%2073%2050).jpg">
-        </section>
+        <!-- nav -->
 
-        <section>
-            <!-- Bio -->
-            <p>IT Professional currently learning Web Development in an effort to further career goals.</p>
-        </section>
-
-        <section>
-            <!-- Contact Info-->
-            <h2>Contact Information</h2>
-            <a>
+        <header>
+            <h1>
+              <a href="/"><h1>Bradley Day</h1></a>
+            </h1>
+            <nav>
                 <ul>
-                    <li>Email: <a href="mailto:BradleyEDay@gmail.com">BradleyEDay@gmail.com</a></li>
-                    <li>GitHub: <a href="https://github.com/BradleyEDay"> BradleyEDay</a></li>
-                    <li>Portfolio: <a href="/">Coming Soon</a></li>
-                    <li>LinkedIN: <a href="https://www.linkedin.com/in/bradleyeday/">Bradley Day</a></li>
+                    <li>
+                        <a href="#About-Me">About Brad</a>
+                    </li>
+                    <li>
+                        <a href="#My-Work">Brad's WebDev Work</a>
+                    </li>
+                    <li>
+                        <a href="#Contact-Me">Contact Brad</a>
+                    </li>
                 </ul>
-            </a>
+            </nav>
+        </header>
+
+        <!-- Banner -->
+
+        <section class="banner">
+            <div class="banner-text">
+                <h2>Coding With BD</h2>
+            </div>
         </section>
 
+        <!-- Bio -->
+
+        <section id="About-Me" class="about">
+            <div class="flexed-right">
+                <h2 class="section-title primary-border">About Brad</h2>
+            </div>
+            <div class="flexed-right">
+                <img src="/assets/images/Bradley Day IMG_1102-1_7x7 72dpi (95 73 50).jpg" alt="Photo of Bradley Day taken in 2020">
+                 <p>
+                IT Professional currently learning Web Development in an effort to further career goals.
+                Brad grew up in Ohio the youngest of three. After attending college at the University of Vermont he worked in Burlington, VT for three years. In late 2019 Brad moved to the Madison, Wisconsin area.
+                </p>
+            </div>
+        </section>
+
+        <!-- Development Work -->
+
+        <section id="My-Work" class="work">
+            <div class="flexed-right">
+                <h2 class="section-title primary-border">Brad's Work</h2>
+            </div>
+            <div class="work-grid-wrapper">
+                <div class="work-grid-container">
+                    <div class="work-grid-item item-1">
+                        <a href="https://BradleyEDay.github.io/run-buddy" target="_blank">Run-Buddy Coding Class Practice Work</a>
+                    </div>
+                    <div class="work-grid-item item-2">
+                        <a href="/">Coming Soon! - Coding Class Project</a>
+                    </div>
+                    <div class="work-grid-item item-3">
+                        <a href="/">Food Generator</a>
+                    </div>
+                    <div class="work-grid-item item-4">
+                        <a href="/">Incoming Side Project</a>
+                    </div>
+                    <div class="work-grid-item item-5">
+                        <a href="/">Good Cats</a>
+                    </div>
+                    <div class="work-grid-item item-6">
+                        <a href="/">Travel Gallery</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Contact Info-->
+
+        <section id="Contact-Me" class="contact">
+            <div class="flexed-right">
+                <h2 class="section-title primary-border">Contact Information</h2>
+             </div>
+             <div class="contact-info">
+                 <a>
+                     <ul>
+                        <li>Email: <a href="mailto:BradleyEDay@gmail.com">BradleyEDay@gmail.com</a></li>
+                        <li>GitHub: <a href="https://github.com/BradleyEDay" target="_blank"> BradleyEDay</a></li>
+                        <li>Portfolio: <a href="About-Me">You're Already Here!</a></li>
+                        <li>LinkedIN: <a href="https://www.linkedin.com/in/bradleyeday/" target="_blank">Bradley Day</a></li>
+                    </ul>
+                </a>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <h2>A Brad Day Website</h2>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#About-Me">About Brad</a>
+                    </li>
+                    <li>
+                        <a href="#My-Work">Brad's WebDev Work</a>
+                    </li>
+                    <li>
+                        <a href="#Contact-Me">Contact Brad</a>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
 
     </body>
 </html>

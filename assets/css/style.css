@@ -1,0 +1,53 @@
+/* Basic Styling Start  */ 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #e5faaf;
+    --secondary-color: #db5f00;
+    --tertiary-color: #78d2f0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--secondary-color);
+    font-family: 'Rubik' ,sans-serif;
+}
+
+body {
+    color: black;
+    font-family: 'Karla' ,sans-serif ;
+    background-color: var(--primary-color);
+}
+
+/* Basic Styling End */ 
+
+/* Header Styling Start */ 
+
+header {
+    padding: 25px 20px;
+    background-image: url(../images/bg-1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 30%;
+    z-index: 600;
+}
+
+
+
+/*Banner Styling*/
+
+.banner {
+    background-image: url("../images/bg-1.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    background-attachment: fixed;
+    background-position: 30%;
+    height: 200px;
+}
