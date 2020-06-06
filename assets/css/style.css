@@ -42,10 +42,16 @@ header {
     z-index: 600;
 }
 
+header h1 {
+    background: var(--tertiary-color);
+    border-radius: 20px;
+}
+
 header h1, footer h1 {
     font-weight: bolder;
     font-size: 35px;
     margin: 0 0 0 30px;
+    padding: 5px 13px 5px 0px;
 }
 
 header a, footer a {
@@ -108,9 +114,10 @@ section {
     background-image: url("../images/bg-3.jpg");
     background-size: cover;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
+    justify-content: -webkit-flex-end;
     flex-wrap: wrap;
-    align-items: flex-end;
+    align-items: center;
     background-attachment: fixed;
     background-position: 80%;
     height: auto;
@@ -119,7 +126,6 @@ section {
 
 .banner-text h2 {
     display: flex;
-    flex: 3 100%;
     flex-direction: row;
     flex-wrap: wrap;
     text-align: right;
