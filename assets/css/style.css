@@ -286,7 +286,7 @@ section {
     border-radius: 10px;
 }
 
-.work-grid-item:hover {
+.work-grid-item p:hover {
     color: var(--secondary-color);
 }
 
@@ -297,18 +297,6 @@ section {
     background-position: center;
     position: relative;
     background-size: cover;
-}
-
-.item-1::after {
-        
-        content: "";
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        opacity: 0;
-        transition: 1s;
 }
 
 .item-5 {
@@ -371,7 +359,7 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 60%;
+    width: 80%;
     margin: 30px auto;
     background-color: var(--tertiary-color);
     padding: 10px 20px 20px 0;
@@ -389,6 +377,7 @@ section {
     align-items: center;
     text-align: center;
     flex-wrap: wrap;
+
 }
 
 .contact-text{
@@ -427,7 +416,7 @@ section {
 
 @media screen and (max-width: 1100px) {
     header, footer {
-        padding-bottom: 0;
+        padding-bottom: 10px;
         justify-content: center;
         position: relative;
     }
@@ -479,15 +468,16 @@ section {
     }
 
     .contact {
-        flex: 0 70%;
-        display: block;
+        display: inline-block;
+        
     }
 
     .contact-info {
         width: 100%;
         justify-items: center;
-        justify-content: space-evenly;
-        font-size: 15px;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        
     }
 
     .rotate {
@@ -495,7 +485,11 @@ section {
     }
 
     body {
-        font-size: 75%;
+        font-size: 20px;
+    }
+
+    .work-grid-item p {
+        font-size: 18px;
     }
 
 }
@@ -516,6 +510,10 @@ section {
     body {
         font-size: 50%;
     }
+
+    .work-grid-item p {
+        font-size: 15px;
+    }
     
 }
 
@@ -530,9 +528,16 @@ section {
 
     .contact-info {
         text-align: center;
+        width: 100%;
+        font-size: 15px;
+        border: none;
+        
     }
 
-    body {
-        font-size: 35%;
+    .contact-text li{
+        text-align: center;
+        width: 100%;
+        border: none;
     }
+
 }
