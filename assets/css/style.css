@@ -176,12 +176,13 @@ section {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
-    width: 80%;
+    width: 90%;
     padding-bottom: 20px;
     margin: 30px 0 10px 10px;
     background-color: var(--tertiary-color);
     padding: 10px;
     border-radius: 10px;
+    overflow: hidden;
 
 }
 
@@ -196,6 +197,7 @@ section {
     background-size: cover;
     background-image: url(../images/hs-s.jpg);
     margin-right: 10px;
+    z-index: 120;
 }
 
 
@@ -250,7 +252,25 @@ section {
     justify-content: center;
     text-align: center;
     text-decoration: none;
-    background: linear-gradient( rgba(243,140,61,.5), rgba(120,210,240,.5));
+    
+}
+
+.work-grid-item div {
+    position: relative;
+    z-index: 100;
+    transition: 1s;
+}
+
+.work-grid-item div::after {
+    background: linear-gradient( rgba(243,140, 61,.5), rgba(120,210,240,.5));
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 1s;
+    content: "";
+    height: 100%;
+    width: 100%;
 }
 
 
@@ -405,7 +425,7 @@ section {
 
 /* Contact Styling End */
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1100px) {
     header, footer {
         padding-bottom: 0;
         justify-content: center;
@@ -430,6 +450,54 @@ section {
     .section-title {
         width: 80%;
     }
+
+    .about {
+        flex: 0 70%;
+        display: block;
+    }
+
+    .bio {
+        align-content: center;
+        display: block;
+    }
+
+    .bio-img {
+        background-position: center;
+        width: 35%;
+        align-items: center;
+    
+    }
+
+    .bio-text {
+        text-align: center;
+        width: 100%;
+    }
+
+    .work {
+        flex: 0 70%;
+        display: block;
+    }
+
+    .contact {
+        flex: 0 70%;
+        display: block;
+    }
+
+    .contact-info {
+        width: 100%;
+        justify-items: center;
+        justify-content: space-evenly;
+        font-size: 15px;
+    }
+
+    .rotate {
+        transform: none;
+    }
+
+    body {
+        font-size: 75%;
+    }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -444,8 +512,27 @@ section {
     .bio-img {
         flex: 0 32%;
     }
+
+    body {
+        font-size: 50%;
+    }
+    
 }
 
 @media screen and (max-width: 575px) {
+    .section-title {
+        width: 95%;
+    }
 
+    .about {
+        flex: 0 100%;
+    }
+
+    .contact-info {
+        text-align: center;
+    }
+
+    body {
+        font-size: 35%;
+    }
 }
