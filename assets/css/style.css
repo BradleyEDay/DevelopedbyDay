@@ -414,16 +414,20 @@ section {
 
 /* Contact Styling End */
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 980px) {
     header, footer {
         padding-bottom: 10px;
         justify-content: center;
         position: relative;
+        width: 100%;
     }
 
     header h1, footer h1 {
-        width: 100%;
+        width: 75%;
         text-align: center;
+        padding: 10px 0;
+        border-radius: 20px;
+        justify-content: center;
     }
 
     header nav ul, footer nav ul {
